@@ -7,8 +7,8 @@ resposta = 1
 for i in range(0,len(frase)):
     if(com [i] != frase[i]):
         resposta = -1
-        break
-if(resposta ==1):
+        break   #sai do laço
+if(resposta == 1):
     print('A frase é um palindromo!')
 else:
     print('A frase não é um palindromo!')

@@ -1,10 +1,13 @@
-maior = 0
-menor = 1000
-for i in range(0, 5):
-    n1 = float(input('Digite o seu peso: '))
-    if n1 > maior:
-        maior = n1
-    if n1 < menor:
-        menor = n1
-print('O maior peso foi:', maior)
-print('O menor peso foi:', menor)
+#!/usr/bin/env python3
+
+peso = float(input('Digite o seu peso: '))
+maior = peso
+menor = peso
+for i in range(1, 5):
+    peso = float(input('Digite o seu peso: '))
+    if peso > maior:
+        maior = peso
+    if peso < menor:
+        menor = peso
+print('O maior peso foi: {}kg'.format(maior))
+print('O menor peso foi: {}kg'.format(menor))

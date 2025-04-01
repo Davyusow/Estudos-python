@@ -5,6 +5,7 @@ hmVelho = 0
 Sub20 = 0
 
 for i in range(0,4):
+    print('\n{} {}° Pessoa {}'.format('-'*5,i+1,'-'*5))
     nome = str(input('Digite o seu Nome: '))
     idade = int(input('Digite o sua idade: '))
     sexo = int(input('Digite o seu sexo:'

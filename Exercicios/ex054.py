@@ -2,15 +2,13 @@
 from datetime import date
 
 ano = date.today().year
-lista = [0,0,0,0,0,0,0]
-quantidade = 0
+idade=0
+maior = 0
+menor = 0
 for i in range(0,7):
-    lista[i] = int(input('Digite o seu ano de Nascimento: '))
-for i in range(0,7):
-    if((ano-lista[i])>18):
-        quantidade+=1
-
-if(quantidade>0):
-    print('{} pessoas são maiores de idade!'.format(quantidade))
-else:
-    print('Nenhuma pessoa é maior de idade ainda!')
+    idade = int(input('Digite o seu ano de Nascimento: '))
+    if((ano-idade)>18):
+        maior+=1
+    else:
+        menor+=1
+print('{} pessoas são maiores de idade\nE {} pessoas são menores de idade'.format(maior,menor))
