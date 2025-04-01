@@ -4,9 +4,9 @@ from time import sleep
 import emoji
 
 jogador = int(input('Suas escolhas:\n'
-'[ 0 ] PEDRA✊️\n'
-'[ 1 ] PAPEL🖐️\n'
-'[ 2 ] TESOURA✌️\n'
+'[ 0 ] PEDRA ✊️\n'
+'[ 1 ] PAPEL 🖐️\n'
+'[ 2 ] TESOURA .✌️\n'
 'Qual é a sua jogada? '))
 computador = randint(0,2)
 jogada = ['Pedra ✊️','Papel 🖐️','Tesour ✌️']    #lista usada no print
@@ -32,3 +32,4 @@ if(0 <= jogador <=2):   # se a jogada for válida
         print('Jogador vence')
 else:
     print('Jogada inválida')
+    
