@@ -7,9 +7,9 @@ print('Vou pensar em um número de 0 a 10, tente adivinhar')
 print('-='*25)
 
 tentativas = 1; acertou = False
+n1 = randint(0,10)
 
-while(acertou == False):
-    n1 = randint(0,10)
+while(acertou == False):    
     n2 = int(input('Tente acertar: '))
     if(n2>=0 and n2<=10): # O 'and' adiciona outra condição ao programa, no caso obriga o número a estar entre 0 e 5
         print('Processando...')
@@ -20,7 +20,10 @@ while(acertou == False):
             acertou == True
             break
         else:
-            print('você errou, tente novamente!')
+            if(n2>n1):
+                print('Menor que isso, tente novamente!')
+            elif(n2<n1):
+                print('Maior que isso, tente novamente!')
             tentativas += 1
     else:
         print('{}O número precisa estar entre 0 e 10!, tente novamente!{}'.format('\033[31m','\033[m'))

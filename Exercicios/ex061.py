@@ -3,10 +3,17 @@
 n1 = int(input('Digite o primeiro termo da PA: '))
 razao = int(input('Digite a razão da PA: '))
 
-cont = 1
+cont = 0
+tam = 9
 
-while(cont<9):
-    print('{} '.format(n1+razao),end=' → ')
+while(cont<tam):
+    if(cont == tam-2):
+        print('{} '.format(n1+razao),end='')
+    else:
+        print('{} '.format(n1+razao),end=' → ')
     n1+=razao
     cont+=1
-print('{} '.format(n1+razao))
+    if(cont == tam-1):
+        tam = int(input('\nDeseja ver mais algum termo? se sim quantos? '))
+        if(tam != 0): tam = cont + tam + 1
+print('Fim')

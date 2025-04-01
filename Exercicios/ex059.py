@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 
-resultado = True
+
+n1 = int(input('Digite o 1° valor: '))
+n2 = int(input('Digite o 2° valor: '))
 escolha = 0
 while(escolha != 5):
-    if(resultado):
-        n1 = int(input('Digite o 1° valor: '))
-        n2 = int(input('Digite o 2° valor: '))
+    
     escolha = int(input('{} Escolha uma Opção: {}\n'
     '[ 1 ] SOMAR\n'
     '[ 2 ] MULTIPLICAR\n'
@@ -21,9 +21,10 @@ while(escolha != 5):
             if(n1>n2): print('O maior é {}'.format(n1))
             elif(n2>n1): print('O maior é {}'.format(n2))
             else: print('Os dois valores são iguais!')
-    #a escolha == 4 está omitida pois se o valor for 4 apenas irá reiniciar o loop
+        if(escolha == 4):
+            n1 = int(input('Digite o 1° valor: '))
+            n2 = int(input('Digite o 2° valor: '))
     #assim como a escolha 5 que iria apenas sair do programa
     else:
-        print('Opção inválida!')
-        resultado = False
+        print('{}Opção inválida!{}'.format('\033[31m','\033[m'))
 print('Fim')

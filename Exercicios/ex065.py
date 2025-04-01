@@ -6,10 +6,6 @@ maior = n1 ; menor = n1
 i=1
 media = n1
 
-print('A média entre os valores digitados é de {}\n'
-        'O maior número digitado foi {}\n'
-        'E o menor foi {}'.format(media/i,maior,menor))
-
 while(cont != 'N'):
     cont = str(input('Deseja inserir outro número?(S/N) ')).strip().upper()
     if(cont != 'S' and cont != 'N'):
@@ -20,6 +16,6 @@ while(cont != 'N'):
         if(maior<n1): maior = n1
         i+=1
         media+=n1
-        print('A média entre os valores digitados é de {}\n'
-        'O maior número digitado foi {}\n'
-        'E o menor foi {}'.format(media/i,maior,menor))
+print('A média entre os valores digitados é de {}\n'
+'O maior número digitado foi {}\n'
+'E o menor foi {}'.format(media/i,maior,menor))
