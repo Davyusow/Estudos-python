@@ -12,6 +12,7 @@ for i in range(0,partidas):
 print("-"*50,'\n',Jogador,'\n',"-"*50)
 print(f'O campo nome tem o valor {Jogador["Nome"]}')
 print(f'O campo gols tem o valor {Jogador["gols"]}')
+print(f'O campo total tem o valor {Jogador["Total"]}\n{"-"*50}')
 print(f'O jogador jogou {partidas} partidas')
 for i in range(0,len(Jogador['gols'])):
     print(f'Na partida {i+1} fez {Jogador["gols"][i]} gols')

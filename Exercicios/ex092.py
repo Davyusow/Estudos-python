@@ -13,5 +13,5 @@ print(f'A idade tem valor {Pessoa["Idade"]}')
 print(f'O Ctps tem o valor: {Pessoa["Ctps"]}')
 if(Pessoa['Ctps'] != 0):
     print(f'O salário tem valor: {Pessoa["Salário"]}')
-    aposentadoria = (Pessoa['AnoDeContratação'] - date.today().year)+Pessoa['Idade'] + 35 #idade na contratação
-    print(f'Aposentadoria tem o valor: {aposentadoria}')#aposentadoria = 35 anos de contribuição
+    Pessoa["aposentadoria"] = (Pessoa['AnoDeContratação'] - date.today().year)+Pessoa['Idade'] + 35 #idade na contratação
+    print(f'Aposentadoria tem o valor: {Pessoa["aposentadoria"]}')#aposentadoria = 35 anos de contribuição
