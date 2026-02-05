@@ -13,17 +13,13 @@ class Garfanhoto:
         return f"{self.nome} é um aluno e tem {self.idade}"
 
 
-g1 = Garfanhoto()
-g1.nome = "Davyusow"
-g1.idade = 21
+g1 = Garfanhoto("Davyusow", 21)
 
 print(g1.mensagem())
 g1.aniversario()
 print(g1.mensagem())
 
-g2 = Garfanhoto()
-g2.nome = "Beltrana"
-g2.idade = 23
+g2 = Garfanhoto("Beltrana", 23)
 
 print(g2)
 print(f"Nome: {g2.nome}")
