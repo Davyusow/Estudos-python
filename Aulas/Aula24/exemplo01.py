@@ -13,22 +13,24 @@ class Garfanhoto:
     def aniversario(self) -> None:
         self.idade += 1
 
-    def mensagem(self) -> str:
-        return f"{self.nome} é um aluno e tem {self.idade}"
-
     def __str__(self) -> str:
         return f"Garfanhoto:\nNome: {self.nome}\nIdade: {self.idade}"
 
 
-# g1 = Garfanhoto("Davyusow", 21)
+g1 = Garfanhoto("Davyusow", 21)
 
-# print(g1.mensagem())
-# g1.aniversario()
-# print(g1.mensagem())
+print(g1)
+g1.aniversario()
+print(g1)
 
 print("g2:")
 g2 = Garfanhoto("Beltrana", 23)
+
 print(g2)
+print(g2.__dict__)  # atributo
+# Woow um json!!
+print(g2.__getstate__())  # método
+print(g2.__class__)
 
 
 print(Garfanhoto.__doc__)
